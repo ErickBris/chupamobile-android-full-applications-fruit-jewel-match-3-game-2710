@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Fruit Jewel Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt">&ldquo;Fruit Jewel&rdquo; Documentation by &ldquo;nguyentam&rdquo; v1.0</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo;Fruit Jewel (please build with Android 4.0.3)&rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Created: 05/02/2014<br>
+                        By: nguyentam<br>
+                        Email: <a href="mailto:huong.androidiconpacks@gmail.com">huong.androidiconpacks@gmail.com</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->		
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing my code. If you have any questions that are beyond the scope of this help file, please feel free to email to huong.androidiconpacks@gmail.com. Thanks so much!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#gettingstart">Getting Started</a></li>
+            <li><a href="#importingproject">Importing Project into Eclipse</a></li>            
+            <li><a href="#changepackage">Changing Package Name</a></li>         
+            <li><a href="#appname">Changing App Name and Texts</a></li>
+            <li><a href="#enableAdmob">Enabling Admob Ads</a></li>
+            <li><a href="#changeappicon">Changing Application Icon</a></li>            
+            <li><a href="#addimages">How to add images</a></li>
+            <li><a href="#changeconfiguration">How to change configuration</a></li>
+            <li><a href="#compile">Compiling the Application</a></li>
+
+            <!--li><a href="#">Any additional unique features that need an overview</a></li>-->
+        </ol>
+
+        <hr>
+
+        <h3 id="overview"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+        <p>Fruit Jewel is another match 3 game. </p>
+        <p>Match 3 is very popular type of game, in this game we implement 2 modes: arcade and classic.</p>
+        <p>Features :</p> 
+
+        <ul>
+            <li>Cool UI</li>
+            <li>Easy to customize </li>
+            <li>Admob supported (admob banner and interstitial)</li>
+            <li>12 levels in arcade mode</li>
+            <li>Support Android 2.2+</li>
+            <li>Leaderboard with SwarmConnect</li>
+            <li>Google analytics integrated</li>
+        </ul>
+
+        <hr>
+
+        <h3 id="gettingstart"><strong>B) Getting Started</strong> - <a href="#toc">top</a></h3>
+
+        <p>Before starting to use this source code and developing this app, firstly, you need to install the following softwares to your computer. If you have already installed these softwares you can skip this step.</p> 
+
+        <p><strong>1. JDK 6 or above:</strong>&nbsp;Install Java Development Kit (JDK) 6 or greater. You can&nbsp;<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">download here</a>.</p>
+
+        <p>
+            <strong>2. ADT Bundle:</strong>&nbsp;Luckily Google have combined Eclipse, ADT Plugin, Android SDK Tools, Android Platform-tools, The latest Android platform into one thing, it's called ADT Bundle. You can&nbsp;<a href="http://developer.android.com/sdk/index.html">download here</a>. Extract the zip file into a folder and run YOUR_FOLDER_PATH/eclipse/eclipse.exe</p>
+
+        <hr>
+
+        <h3 id="importingproject"><strong>C) Importing Project into Eclipse</strong> - <a href="#toc">top</a></h3>
+
+        <p>1. Extract the downloaded archive that you have purchased in Envato.</p>
+        <p>2. Open Eclipse &gt; Select File &gt; Import.</p>
+        <p>3. At the Import window page select Existing Projects into Workspace under General and click Next. At the next window choose Select archive file. Press the Browse button and choose YOUR_PROJECT_PATH/source file present in the Project folder. Click Finish.</p>
+        <p>4. Your project will be visible at the Package Explorer</p>
+        <img src="assets/images/importprj.png" width="800" alt="HTML Structure">
+
+        <h3 id="changepackage"><strong>D) Changing Package Name</strong> - <a href="#toc">top</a></h3>
+
+        <p>You need to change package name in the .java, .xml files , android manifest.</p>
+        <p>1. Open Eclipse </p>
+        <p>2. Click on your project name</p>
+        <p>3. Press Ctrl + H 
+        <p>4. Change to tab File Search, type on com.fruitjewel.</p>
+        <img src="assets/images/changepackage1.png" width="800" alt="">
+        <p>5. Click on Replace, then replace com.fruitjewel to your own packagename</p>
+        <p>6. Go to src folder, press F2 to rename package name, replace com.fruitjewel to your own package name</p>
+        <img src="assets/images/changepackage2.png" width="800" alt="">
+        <hr>
+
+        <h3 id="appname"><strong>E) Changing App Name and Texts</strong> - <a href="#toc">top</a></h3>
+
+        <p>Go to res/values/ directory and edit strings.xml file.</p>
+
+        <pre class="brush: xml;">	
+            <string name="app_name">Fruit Jewel</string>   
+        </pre>        
+
+        <hr>
+
+        <h3 id="enableAdmob"><strong>F) Enabling Admob Ads</strong> - <a href="#toc">top</a></h3>
+
+        <p>Go to res/values/ directory and edit strings.xml file. You just need to replace YOUR_ADMOB_ID with your own admob id, ads will be display.</p>
+
+        <pre class="brush: xml;">	
+            <string name="admob_id">YOUR_ADMOB_ID</string> 
+        </pre>
+        <hr>
+        <h3 id="changeappicon"><strong>G) Changing Application Icon</strong> - <a href="#toc">top</a></h3>
+
+        <p>You can go <a href="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html">here</a>. Upload your own images, download icons and copy it to res folder</p>
+
+        <hr>
+
+        <h3 id="addimages"><strong>H) How to add levels</strong> - <a href="#toc">top</a></h3>
+
+        <p>By default, Fruit Jewel has 12 levels. Locate in assets/arcade.json.</p>
+        <p>If you want to add more levels, put it in that file</p>
+        <pre class="">	
+            {
+            "brick3": [
+                
+            ],
+            "brick2": [
+                {
+                    "j": "3",
+                    "i": "3"
+                },
+                {
+                    "j": "3",
+                    "i": "4"
+                },
+                {
+                    "j": "4",
+                    "i": "3"
+                },
+                {
+                    "j": "4",
+                    "i": "4"
+                }
+            ]
+        },
+	<p>j is the column number and i is the row number. when brick3 is destroyed, brick2 will appear. <br/>You can try to play arcade mode to know more about it</p>
+        </pre>
+        
+        <hr>
+
+        <h3 id="changeconfiguration"><strong>I) Change Google Analytics ID</strong> - <a href="#toc">top</a></h3>
+
+        <p>Go to res/values/ directory and edit analytics.xml file.</p>
+        <pre class="brush: xml;">	
+            <!--Replace placeholder ID with your tracking ID-->
+	    <string name="ga_trackingId">YOUR_GOOGLE_ANALYTICS_ID</string>
+
+	    <!--Enable automatic activity tracking-->
+	    <bool name="ga_autoActivityTracking">true</bool>
+
+	    <!--Enable automatic exception tracking-->
+	    <bool name="ga_reportUncaughtExceptions">true</bool>
+        </pre>        
+
+        <hr>
+
+	<h3 id="changeconfiguration"><strong>J) Change leaderboard</strong> - <a href="#toc">top</a></h3>
+
+        <p>Go to JewelArcade file and JewelClassic, change it to your APP_ID and APP_KEY</p>
+        <pre class="">	
+            /** Swarm **/
+		public static final int SWARM_APP_ID = 6662;
+		public static final String SWARM_APP_KEY = "3a96bfb6d29fa36e09da8563e6130e1e";
+        </pre>        
+	<p>Each level will have a seperate leaderboard id, you can change it in this line</p>
+	<pre class="">	
+            private int leaderboardLevels[] = new int[] {11076,11108,11110,11112,11114, 11116, 11118, 11120
+												   ,11122, 11124, 11126, 11128};
+        </pre> 
+        <hr>
+
+	<h3 id="changeconfiguration"><strong>K) Other Configuration</strong> - <a href="#toc">top</a></h3>
+
+        <p>Go to res/values/ directory and edit integer.xml file.</p>
+        <pre class="brush: xml;">	
+            <resources>
+	       <integer name="level_base_score">1000</integer>
+	       <integer name="level_increment_score">1000</integer>
+	       <integer name="quickly_time">8</integer>
+	       <integer name="quickly_count">10</integer>
+	    </resources>
+        </pre>  
+	<p>level_base_score is initial goal for classic mode</p>     
+	<p>level_increment_score is increment goal for classic mode</p>
+        <hr>
+        <h3 id="compile"><strong>L) Compiling the Application</strong> - <a href="#toc">top</a></h3>
+
+        <p>
+            After customizing this app, you need to compile into an .apk file that can be installed in Android devices. Here are the steps of compiling this application.</p>
+        <p>
+            1. Select the Finddifferences project in Package Explorer, Right click and select Export.</p>
+        <p>
+            2. At Export window select Android &gt; Export Android Application. Then, click Next button.</p>
+        <p>
+            <img alt="" src="assets/images/image_4.png"></p>
+        <p>
+            3. Your project name will appear in Project: box. If not, click Browse and find. Click Next button to proceed.</p>
+        <p>
+            <img alt="" src="assets/images/image_2.png" width="800"></p>
+        <p>
+            4. Select your keystore or create a new one. In Location, click Browse button to decide keystore name and the location of it. Give a strong password and proceed to next step.</p>
+        <p>
+            5. Fill the key creation form and press Next.</p>
+        <p>
+            <img alt="" src="assets/images/image_7.png" width="800"></p>
+        <p>
+            6. Finally, click Browse button to specify the location where you want to have the generated apk, and then click Finish. Now your application is ready. Install it. Have fun.</p>
+
+        <hr>
+
+        <p>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. No guarantees, but I'll do my best to assist.</p> 
+
+        <p class="append-bottom alt large"><strong>Nguyen Tam</strong></p>
+        <p><a href="#toc">Go To Table of Contents</a></p>
+
+        <hr class="space">
+    </div><!-- end div .container -->
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>
